@@ -1,8 +1,10 @@
 var express = require('express');
+const { response } = require('express');
 app = express();
 
 app.get('/', function (req, res) {
-  res.send('Hello World!\n');
+  response = 'This is version 1 of the app.' + '\n';
+  res.send(response);
 });
 
 app.get('/mars', function (req, res) {
